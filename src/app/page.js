@@ -1,38 +1,27 @@
-'use client'
-import { useState } from "react";
+"use client";
+import Link from "next/link";
 import styles from "./page.module.css";
-
-const InnerComp = () => {
-  return(
-    <h1>I am from inner component</h1>
-  )
-}
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [name, setName] = useState('amit')
-  const check = () => {
-    //alert(item)
-    setName('Amit Goyal')
+  const router = useRouter();
+  const navigate = (route) => {
+    router.push(route)
   }
   return (
-    <main className={styles.main}>
-      {/* <User name = 'Anmit'/>*/}
-      <h1>home Page {name}</h1> 
-      <button onClick={()=> check()}>Click</button>
-      {/* calling component as a normal call */}
-      <InnerComp />
-      {/* calling component as a function call */}
-      {InnerComp()}
+    <main>
+      <h1>Routing Home Page</h1>
+      <br />
+      <Link href="/login">LogIn</Link>
+      <br />
+      <br />
+      <Link href="/about">About</Link>
+      <br />
+      <br />
+      <button onClick={()=>navigate('/login')}>Go to LogIn Page</button>
+      <br />
+      <br />
+      <button onClick={()=>navigate('/about')}>Go to About Page</button>
     </main>
   );
-}
-
-
-const User = (props) => {
-  return(
-    <div>
-      {props.name} is saying hello from this page
-    </div>
-  )
-  
 }
