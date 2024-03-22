@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   const navigate = (route) => {
-    router.push(route)
-  }
+    router.push(route);
+  };
   return (
     <main>
       <h1>Routing Home Page</h1>
@@ -15,13 +15,16 @@ export default function Home() {
       <Link href="/login">LogIn</Link>
       <br />
       <br />
-      <Link href="/about">About</Link>
+      <Link href="/studentList">Student List</Link>
       <br />
       <br />
-      <button onClick={()=>navigate('/login')}>Go to LogIn Page</button>
+      <Link href="/pizza">Pizza List</Link>
       <br />
       <br />
-      <button onClick={()=>navigate('/about')}>Go to About Page</button>
+      <button onClick={() => navigate("/login")}>Go to LogIn Page</button>
+      <br />
+      <br />
+      <button onClick={() => navigate("/about")}>Go to About Page</button>
     </main>
   );
 }
