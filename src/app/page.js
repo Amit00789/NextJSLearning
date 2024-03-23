@@ -21,6 +21,12 @@ export default function Home() {
       <Link href="/pizza">Pizza List</Link>
       <br />
       <br />
+      <Link href="/productList">Product List</Link>
+      <br />
+      <br />
+      <Link href="/productServer">Product List Server Componenet</Link>
+      <br />
+      <br />
       <button onClick={() => navigate("/login")}>Go to LogIn Page</button>
       <br />
       <br />
