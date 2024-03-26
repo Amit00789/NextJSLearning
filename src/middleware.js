@@ -5,7 +5,7 @@ export function middleware(request){
     // }
 }
 export const config={
-    matcher:['/about/aboutCollege:path','/studentList/:path*', '/pizza/:path*']
+    matcher:['/about/aboutCollege:path','/studentList/:path*']
     //if path matches aboutcollege in about or studentlist, page will gets redirected to login page.
 }
  

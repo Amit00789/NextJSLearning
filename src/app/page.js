@@ -46,6 +46,18 @@ export default function Home() {
       <br />
       <br />
       <Link href="/font">Font Optimization</Link>
+      <br />
+      <br />
+      <Link href="/metadata">Generate Metadata</Link>
+      <br />
+      <br />
+      <Link href="/myLocation">Get Location Using Script Componenet</Link>
+      <br />
+      <br />
+      <Link href="/userData">Get User Data with loader</Link>
+      <br />
+      <br />
+      <Link href="/staticSiteGeneration">Get User Data with static site generation</Link>
     </main>
   );
 }
