@@ -2,6 +2,20 @@
 const nextConfig = {
     images: {
         domains:["www.floralwallpaper.co.uk"]
+    },
+    redirects: async () => {
+        return  [
+            {
+                source: '/redirection',
+                destination: '/',
+                permanent: false
+            },
+            {
+                source: '/redirection/:redirection',
+                destination: '/',
+                permanent: false
+            }
+        ]
     }
 };
 
