@@ -58,6 +58,9 @@ export default function Home() {
       <br />
       <br />
       <Link href="/staticSiteGeneration">Get User Data with static site generation</Link>
+      <br />
+      <br />
+      <Link href="/redirection">Redirection</Link>
     </main>
   );
 }
